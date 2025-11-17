@@ -1,53 +1,101 @@
-CREAR ARCHIVO .ENV CON LAS SIGUIENTES VARIABLES:
+API Blog – Actividad 8
 
-PORT=3000
-NODE_ENV=development
+API REST sencilla desarrollada en Node.js + Express, usando MySQL como base de datos.
+Permite gestionar autores y posts, incluyendo la relación entre ambos.
+
+⸻
+
+Tecnologías utilizadas
+	•	Node.js
+	•	Express
+	•	MySQL
+	•	mysql2
+	•	dotenv
+
+⸻
+
+Ejecutar el proyecto
+	1.	Instalar dependencias:
+
+npm install
+	2.	Crear un archivo .env en la raíz del proyecto (no se sube a GitHub):
 
 DB_HOST=localhost
-DB_USER=
+DB_USER=root
 DB_PASSWORD=
-DB_NAME=blog
 DB_PORT=3306
+DB_NAME=blog
+	3.	Iniciar el servidor:
 
+npm start
 
+El servidor estará disponible en:
 
-# Rutas disponibles de la API
+http://localhost:3000
 
-## Autores
+⸻
 
-### Obtener todos los autores
-GET http://localhost:3000/api/authors
+Rutas de la API
 
-### Obtener un autor por ID
-GET http://localhost:3000/api/authors/:id
+—– Autores —–
 
-### Crear un autor
-POST http://localhost:3000/api/authors
-Body (JSON):
+Obtener todos los autores:
+GET /api/authors
+
+Obtener un autor por ID:
+GET /api/authors/:id
+
+Crear un autor:
+POST /api/authors
+Content-Type: application/json
+
 {
-  "name": "Nombre del autor",
-  "email": "email@ejemplo.com",
-  "image": "https://imagen.com/foto.jpg"
+“name”: “Nombre”,
+“email”: “email@ejemplo.com”,
+“image”: “https://imagen.com/foto.jpg”
 }
 
+⸻
 
-## Posts
+—– Posts —–
 
-### Obtener todos los posts (incluye datos del autor)
-GET http://localhost:3000/api/posts
+Obtener todos los posts (incluye datos del autor):
+GET /api/posts
 
-### Obtener un post por ID
-GET http://localhost:3000/api/posts/:id
+Obtener un post por ID:
+GET /api/posts/:id
 
-### Crear un post
-POST http://localhost:3000/api/posts
-Body (JSON):
+Crear un post:
+POST /api/posts
+Content-Type: application/json
+
 {
-  "title": "Título del post",
-  "description": "Contenido del post",
-  "category": "Categoría",
-  "author_id": 1
+“title”: “Título”,
+“description”: “Contenido del post”,
+“category”: “general”,
+“author_id”: 1
 }
 
-### Obtener todos los posts escritos por un autor concreto
-GET http://localhost:3000/api/posts/author/:authorId
+Obtener posts de un autor concreto:
+GET /api/posts/author/:authorId
+
+⸻
+
+Estructura del proyecto
+
+src/
+├─ app.js
+├─ config/
+│   └─ db.js
+├─ controllers/
+│   ├─ authors.controller.js
+│   └─ posts.controller.js
+└─ routes/
+├─ authors.js
+└─ posts.js
+
+⸻
+
+Autor
+
+Pablo Ibiza Granados
