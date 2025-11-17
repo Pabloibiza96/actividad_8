@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 API Blog – Actividad 8
 
 API REST sencilla desarrollada en Node.js + Express, usando MySQL como base de datos.
@@ -109,4 +107,3 @@ Se incluye un archivo llamado prueba.rest para poder probar todas las peticiones
 Autor
 
 Pablo Ibiza Granados
->>>>>>> develop
