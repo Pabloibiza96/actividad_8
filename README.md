@@ -18,21 +18,21 @@ Ejecutar el proyecto
 
 	1.	Instalar dependencias:
 
-npm install
+    npm install
 
 
 	2.	Crear un archivo .env en la raíz del proyecto (no se sube a GitHub):
 
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=
-DB_PORT=3306
-DB_NAME=blog
+      DB_HOST=localhost
+      DB_USER=root
+      DB_PASSWORD=
+      DB_PORT=3306
+      DB_NAME=blog
 
 
 	3.	Iniciar el servidor:
 
-npm start
+      npm start
 
 El servidor estará disponible en:
 
