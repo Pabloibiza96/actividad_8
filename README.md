@@ -16,14 +16,14 @@ Tecnologías utilizadas
 
 Ejecutar el proyecto
 
-  1. Crear base de datos con el script db.sql
+  1.  Crear base de datos con el script db.sql
 
 	2.  Instalar dependencias:
 
     npm install
 
 
-	2.	Crear un archivo .env en la raíz del proyecto (no se sube a GitHub):
+	3.	Crear un archivo .env en la raíz del proyecto (no se sube a GitHub):
 
       DB_HOST=localhost
       DB_USER=root
@@ -31,8 +31,7 @@ Ejecutar el proyecto
       DB_PORT=3306
       DB_NAME=blog
 
-
-	3.	Iniciar el servidor:
+	4.	Iniciar el servidor:
 
       npm start
 
