@@ -1,0 +1,51 @@
+@URL=http://localhost:3000/api
+
+########### AUTORES ##################
+
+### Obtener todos los autores
+GET {{URL}}/authors
+
+###
+
+### Obtener un autor por ID
+GET {{URL}}/authors/1
+
+###
+
+### Crear un autor
+POST {{URL}}/authors
+Content-Type: application/json
+
+{
+  "name": "Autor de prueba",
+  "email": "autornuevo9@example.com",
+  "image": "https://example.com/foto.jpg"
+}
+
+########### POSTS ##################
+
+### Obtener todos los posts (incluye datos del autor)
+GET {{URL}}/posts
+
+###
+
+### Obtener un post por ID
+GET {{URL}}/posts/1
+
+###
+
+### Obtener todos los posts de un autor concreto
+GET {{URL}}/posts/author/1
+
+###
+
+### Crear un post
+POST {{URL}}/posts
+Content-Type: application/json
+
+{
+  "title": "Post de prueba",
+  "description": "Este es un post de ejemplo",
+  "category": "general",
+  "author_id": 1
+}
