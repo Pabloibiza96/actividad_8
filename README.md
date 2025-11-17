@@ -102,6 +102,8 @@ src/
 
 ⸻
 
+Se incluye un archivo llamado prueba.rest para poder probar todas las peticiones (una vez creada la bd, instaladas las dependencias, creado el archivo .env y levantado el servidor)
+
 Autor
 
 Pablo Ibiza Granados
