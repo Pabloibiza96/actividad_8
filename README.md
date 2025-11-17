@@ -16,7 +16,7 @@ Tecnologías utilizadas
 
 Ejecutar el proyecto
 
-  1.  Crear base de datos con el script db.sql
+  	1. Crear base de datos con el script db.sql
 
 	2.  Instalar dependencias:
 
